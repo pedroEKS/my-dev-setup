@@ -1,0 +1,15 @@
+git
+curl
+wget
+vim
+htop
+neofetch
+build-essential
+openjdk-21-jdk
+python3-pip
+python3-dev
+nodejs
+npm
+postgresql-client
+docker.io
+docker-compose
