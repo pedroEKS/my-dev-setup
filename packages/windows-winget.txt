@@ -1,0 +1,10 @@
+Git.Git
+Python.Python.3.12
+Oracle.JDK.21
+Microsoft.VisualStudioCode
+JetBrains.Toolbox
+Docker.DockerDesktop
+Microsoft.PowerShell
+JanDeDobbeleer.OhMyPosh
+Microsoft.PowerToys
+CPUID.CPU-Z
