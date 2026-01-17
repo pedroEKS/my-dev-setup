@@ -4,26 +4,27 @@ wget
 vim
 htop
 neofetch
-
-# Compilação
-make
+# Compilers & Build
 gcc
+make
 automake
+cmake
 
-# Linguagens
+# Runtimes
 java-21-openjdk-devel
-java-17-openjdk-devel
-java-25-openjdk-devel
 python3-pip
 python3-devel
 nodejs
 npm
 
-# DB
+# Databases & Infra
 postgresql
-
-# Infra
 docker-ce
 docker-ce-cli
 containerd.io
 docker-compose-plugin
+podman
+
+# Tools
+code
+gnome-tweaks
