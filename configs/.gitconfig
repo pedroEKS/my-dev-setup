@@ -1,0 +1,17 @@
+[user]
+    name = Pedro Aureliano  # Use seu nome aqui
+    email = pedroeks155@gmail.com  # Use seu email principal aqui
+[core]
+    editor = code --wait
+    autocrlf = input
+[init]
+    defaultBranch = main
+[alias]
+    s = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate
+[pull]
+    rebase = false
+
