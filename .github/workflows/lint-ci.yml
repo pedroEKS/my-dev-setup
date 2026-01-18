@@ -1,0 +1,52 @@
+name: CI - Lint & Check Dev Setup
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    name: Lint Shell & PowerShell
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: Lint Bash scripts
+        run: |
+          shellcheck install.sh || true
+          shellcheck configs/**/*.sh || true
+
+      - name: Install PowerShell
+        run: sudo apt-get install -y powershell
+
+      - name: Lint PowerShell scripts
+        run: |
+          pwsh -Command "Install-Module -Force PSScriptAnalyzer"
+          pwsh -Command "Invoke-ScriptAnalyzer ./**/*.ps1 -Recurse"
+
+  check-files:
+    name: Check important files exist
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List key files
+        run: |
+          echo "Scripts:"
+          ls -la install.sh install.ps1
+
+      - name: Check package lists
+        run: |
+          if [ ! -s packages/apt.txt ]; then echo "⚠️ apt.txt está vazio ou não existe"; fi
+          if [ ! -s packages/dnf.txt ]; then echo "⚠️ dnf.txt está vazio ou não existe"; fi
+          if [ ! -s packages/windows-winget.txt ]; then echo "⚠️ winget list está vazio ou não existe"; fi
+          ls -la packages/
