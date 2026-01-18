@@ -2,29 +2,35 @@ git
 curl
 wget
 vim
-htop
+btop
 neofetch
-# Compilers & Build
-gcc
-make
-automake
-cmake
+code
 
-# Runtimes
+tmux
+ripgrep
+fd-find
+bat
+jq
+unzip
+
 java-21-openjdk-devel
-python3-pip
+dotnet-sdk-8.0
 python3-devel
 nodejs
 npm
+golang
+rust
+cargo
 
-# Databases & Infra
-postgresql
+gcc
+make
+cmake
+maven
+gradle
+
 docker-ce
 docker-ce-cli
 containerd.io
 docker-compose-plugin
-podman
-
-# Tools
-code
-gnome-tweaks
+terraform
+kubectl
