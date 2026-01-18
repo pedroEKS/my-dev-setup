@@ -69,7 +69,7 @@ my-dev-setup/
 └── README.md              # This documentation
 ```
 
-
 ---
+![CI](https://github.com/pedroEKS/my-dev-setup/actions/workflows/lint-ci.yml/badge.svg)
 
 *Maintained by Pedro Aureliano.*
