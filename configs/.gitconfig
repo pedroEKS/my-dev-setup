@@ -1,6 +1,6 @@
 [user]
-    name = Pedro Aureliano  # Use your name here
-    email = pedroeks155@gmail.com  # Use your main email here
+    name =   # Use your name here
+    email =   # Use your main email here
 [core]
     editor = code --wait
     autocrlf = input
