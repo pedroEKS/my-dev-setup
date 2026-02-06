@@ -13,12 +13,12 @@ bat
 jq
 unzip
 
-java-21-openjdk-devel
+openjdk-21-jdk
 dotnet-sdk-8.0
-python3-devel
+python3-dev
 nodejs
 npm
-golang
+golang-go
 rust
 cargo
 
