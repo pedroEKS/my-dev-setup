@@ -31,7 +31,7 @@ Supports **Fedora** (primary), Ubuntu, and Debian.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/pedroEKS/my-dev-setup.git
+git clone https://github.com/eksdat/my-dev-setup.git
 cd my-dev-setup
 
 # 2. Grant execution permissions
